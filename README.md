@@ -1,7 +1,7 @@
 # LeetCode Progress Tracker 🚀
 
-[![Problems Solved](https://img.shields.io/badge/solved-0-brightgreen.svg)](problems/)
-[![Easy](https://img.shields.io/badge/easy-0-success.svg)](problems/easy/)
+[![Problems Solved](https://img.shields.io/badge/solved-1-brightgreen.svg)](problems/)
+[![Easy](https://img.shields.io/badge/easy-1-success.svg)](problems/easy/)
 [![Medium](https://img.shields.io/badge/medium-0-orange.svg)](problems/medium/)
 [![Hard](https://img.shields.io/badge/hard-0-red.svg)](problems/hard/)
 
@@ -11,10 +11,10 @@
 
 | Difficulty | Solved | Total | Percentage |
 |------------|--------|-------|------------|
-| Easy       | 0      | TBD   | 0%         |
-| Medium     | 0      | TBD   | 0%         |
-| Hard       | 0      | TBD   | 0%         |
-| **Total**  | **0**  | **TBD** | **0%**   |
+| Easy       | 1      | TBD   | 100.0%         |
+| Medium     | 0      | TBD   | 0.0%         |
+| Hard       | 0      | TBD   | 0.0%         |
+| **Total**  | **1**  | **TBD** | **100.0%**   | **1**  | **TBD** | **100.0%**   | **0**  | **TBD** | **0%**   |
 
 ## 🎯 Goals
 
@@ -49,18 +49,14 @@ leetcode-progress/
 ## 🔥 Recent Solutions
 
 <!-- RECENT_SOLUTIONS_START -->
-No solutions yet. Start solving!
+- [1. Two Sum](problems/easy/0001-two-sum/README.md) - *Easy* - 2025-11-20
 <!-- RECENT_SOLUTIONS_END -->
 
 ## 📚 Topics Covered
 
 <!-- TOPICS_START -->
-- Arrays: 0 problems
-- Strings: 0 problems
-- Dynamic Programming: 0 problems
-- Graphs: 0 problems
-- Trees: 0 problems
-- Hash Tables: 0 problems
+- Arrays: 1 problems
+- Hash Table: 1 problems
 <!-- TOPICS_END -->
 
 ## 🛠️ How to Use
@@ -96,8 +92,8 @@ As a computer vision engineer, many algorithmic concepts directly apply:
 ## 📈 Consistency Tracking
 
 <!-- STREAK_START -->
-Current Streak: 0 days
-Longest Streak: 0 days
+Current Streak: 1 days
+Longest Streak: 1 days
 <!-- STREAK_END -->
 
 ## 🏆 Achievements
@@ -116,4 +112,4 @@ Check individual problem files for detailed explanations, time/space complexity 
 
 ---
 
-**Last Updated**: Auto-generated on every commit
+**Last Updated**: 2025-11-20 06:11:01

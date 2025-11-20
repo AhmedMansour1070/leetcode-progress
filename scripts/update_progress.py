@@ -31,7 +31,7 @@ def scan_problems(repo_root):
                 continue
             
             # Parse README to extract problem info
-            with open(readme_path, 'r') as f:
+            with open(readme_path, 'r', encoding='utf-8') as f:
                 content = f.read()
             
             # Extract problem number and name from title
@@ -56,7 +56,7 @@ def scan_problems(repo_root):
                 'difficulty': difficulty,
                 'topics': topics,
                 'date_solved': date_solved,
-                'path': str(problem_dir.relative_to(repo_root))
+                'path': str(problem_dir.relative_to(repo_root)).replace('\\', '/')
             })
     
     return sorted(problems, key=lambda x: x['number'])
@@ -107,7 +107,7 @@ def update_progress_json(repo_root, problems):
     
     # Load existing progress or create new
     if stats_path.exists():
-        with open(stats_path, 'r') as f:
+        with open(stats_path, 'r', encoding='utf-8') as f:
             progress = json.load(f)
     else:
         progress = {
@@ -164,7 +164,7 @@ def update_progress_json(repo_root, problems):
     
     # Save progress
     stats_path.parent.mkdir(parents=True, exist_ok=True)
-    with open(stats_path, 'w') as f:
+    with open(stats_path, 'w', encoding='utf-8') as f:
         json.dump(progress, f, indent=2)
     
     return progress
@@ -174,7 +174,7 @@ def update_readme(repo_root, progress):
     """Update the README.md file with current progress."""
     readme_path = repo_root / "README.md"
     
-    with open(readme_path, 'r') as f:
+    with open(readme_path, 'r', encoding='utf-8') as f:
         content = f.read()
     
     # Update badges
@@ -276,7 +276,7 @@ Longest Streak: {progress['longest_streak']} days"""
     )
     
     # Save README
-    with open(readme_path, 'w') as f:
+    with open(readme_path, 'w', encoding='utf-8') as f:
         f.write(content)
 
 

@@ -39,7 +39,7 @@ def create_problem_file(number, name, difficulty, topics, description=""):
         print(f"Error: Template file not found at {template_path}")
         sys.exit(1)
     
-    with open(template_path, 'r') as f:
+    with open(template_path, 'r', encoding='utf-8') as f:
         template = f.read()
     
     # Generate problem slug
@@ -63,7 +63,7 @@ def create_problem_file(number, name, difficulty, topics, description=""):
     
     # Create README file
     readme_path = problem_dir / "README.md"
-    with open(readme_path, 'w') as f:
+    with open(readme_path, 'w', encoding='utf-8') as f:
         f.write(content)
     
     # Create solution file
@@ -94,7 +94,7 @@ if __name__ == "__main__":
     print(f"Test 1: {{'input': {{test_input}}, 'expected': {{expected}}, 'result': {{result}}, 'passed': {{result == expected}}}}")
 '''
     
-    with open(solution_path, 'w') as f:
+    with open(solution_path, 'w', encoding='utf-8') as f:
         f.write(solution_template)
     
     # Create notes file
@@ -114,7 +114,7 @@ if __name__ == "__main__":
 
 
 """
-    with open(notes_path, 'w') as f:
+    with open(notes_path, 'w', encoding='utf-8') as f:
         f.write(notes_content)
     
     print(f"✅ Created problem files at: {problem_dir}")
